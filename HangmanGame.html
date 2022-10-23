@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HangmanGameStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>لعبة الرجل المشنوق</title>
+</head>
+<body dir="rtl">
+
+    <div class="container">
+        <header class="game-info">
+            <h2 class="game-name">الرجل المشنوق</h2>
+            <h2 class="category">الصنف: <span></span></h2>
+        </header>
+        <hr>
+        <div class="row">
+            <div class="hangman-draw">
+                <h2 class="attempts">المحاولات: <span>8</span></h2>
+                <div class="the-draw">
+                    <div class="the-stand"></div>
+                    <div class="the-hang"></div>
+                    <div class="the-rope"></div>
+                    <div class="the-man">
+                        <div class="the-head"></div>
+                        <div class="the-body"></div>
+                        <div class="hands"></div>
+                        <div class="legs"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="letters">
+                
+            </div>
+        </div>
+        <div class="letter-guess" dir="rtl">
+
+        </div>
+
+        <button class="take-hint btn">مساعدة</button>
+        <p class="text"></p>
+        <br>
+        <button class="reset btn">إعادة</button>
+
+
+    </div>
+    <div class="pop-up">
+        <div class="inner-content">
+            <h2>The answer was:</h2>
+            <span>Family guy</span>
+        </div>
+        <button class="close">
+            <i class="fas fa-close"></i>
+        </button>
+    </div>
+
+    <audio src="" id="success" preload="auto"></audio>
+    <audio src="Audio/failed.mp3" id="failed" preload='auto'></audio>
+
+    <script src="HangmanGameApp.js"></script>
+</body>
+</html>
